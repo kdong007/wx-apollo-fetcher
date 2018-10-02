@@ -9,22 +9,29 @@ function wxApolloFetcher(url, _ref) {
         method = _ref.method,
         headers = _ref.headers;
 
-    return new Promise(function (resolve, reject) {
+    return new Promise(function (resolve) {
         return wx.request({
             url: url,
             header: headers,
             method: method,
             data: body,
             dataType: "text",
-            success: function success(_ref2) {
-                var data = _ref2.data;
+            complete: function complete(_ref2) {
+                var data = _ref2.data,
+                    statusCode = _ref2.statusCode,
+                    errMsg = _ref2.errMsg;
                 return resolve({
+                    ok: function ok() {
+                        return statusCode >= 200 && statusCode < 300;
+                    },
+                    statusText: function statusText() {
+                        return errMsg;
+                    },
                     text: function text() {
                         return Promise.resolve(data);
                     }
                 });
-            },
-            fail: reject
+            }
         });
     });
 }
