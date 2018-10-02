@@ -7,7 +7,7 @@
   "author": "Mars Dong <kdong@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "babel index.js -d build -preset=env"
+    "build": "babel index.js -d build --presets=env"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
