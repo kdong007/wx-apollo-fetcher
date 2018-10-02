@@ -1,6 +1,6 @@
 {
   "name": "wx-apollo-fetcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "apollo httpLink fetcher for wx",
   "main": "build",
   "repository": "git@github.com:kdong007/wx-apollo-fetcher.git",
