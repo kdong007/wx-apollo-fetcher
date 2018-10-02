@@ -4,7 +4,14 @@
   "description": "apollo httpLink fetcher for wx",
   "main": "build",
   "repository": "git@github.com:kdong007/wx-apollo-fetcher.git",
-  "author": "Mars Dong <kdong@hotmail.com>",
+  "homepage": "https://github.com/kdong007/wx-apollo-fetcher",
+  "author": "Mars Dong <kdong007@hotmail.com>",
+  "keywords": [
+    "wechat",
+    "wx",
+    "apollo",
+    "graphql"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "babel index.js -d build --presets=env"

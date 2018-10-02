@@ -4,6 +4,8 @@
     "eslint.autoFixOnSave": true,
     "eslint.packageManager": "yarn",
     "cSpell.words": [
-        "kdong"
+        "hotmail",
+        "kdong",
+        "wechat"
     ]
 }
