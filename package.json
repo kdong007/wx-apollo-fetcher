@@ -1,0 +1,17 @@
+{
+  "name": "wx-apollo-fetcher",
+  "version": "1.0.0",
+  "description": "apollo httpLink fetcher for wx",
+  "main": "build",
+  "repository": "git@github.com:kdong007/wx-apollo-fetcher.git",
+  "author": "Mars Dong <kdong@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel index.js -d build -preset=env"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.6.1"
+  }
+}
