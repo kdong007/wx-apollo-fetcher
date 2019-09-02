@@ -1,6 +1,6 @@
 {
     "name": "wx-apollo-fetcher",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "apollo httpLink fetcher for wx",
     "main": "build",
     "repository": "git@github.com:kdong007/wx-apollo-fetcher.git",
@@ -14,7 +14,7 @@
     ],
     "license": "MIT",
     "scripts": {
-        "prepublish": "babel index.js -d build --presets=env",
+        "prepublish": "babel index.js -d build --presets=@babel/env",
         "postpublish": "rm -rf build"
     },
     "devDependencies": {
