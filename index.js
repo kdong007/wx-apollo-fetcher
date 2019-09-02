@@ -1,6 +1,3 @@
-
-
-
 export default function wxApolloFetcher(url, { body, method, headers }) {
     return new Promise(resolve =>
         wx.request({
@@ -13,8 +10,8 @@ export default function wxApolloFetcher(url, { body, method, headers }) {
                 resolve({
                     ok: () => statusCode >= 200 && statusCode < 300,
                     statusText: () => errMsg,
-                    text: () => Promise.resolve(data)
-                })
+                    text: () => Promise.resolve(data),
+                }),
         })
-    )
-}   
+    );
+}
